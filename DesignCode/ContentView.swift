@@ -36,6 +36,13 @@ struct ContentView: View {
             NavigationView{
                 ScrollView(.vertical,showsIndicators: true) {
                     VStack(alignment: .leading){
+                        Rectangle()
+                            .frame(width: 50, height: 3, alignment: .leading)
+                            .cornerRadius(8)
+                            .foregroundColor(.accentColor)
+                            .padding(.leading,15)
+                        
+                        
                         Text("Life Cards")
                             .font(.title2)
                             .bold()
@@ -45,8 +52,6 @@ struct ContentView: View {
                         CardRow()
                             .padding(.bottom,10)
                         
-//                        Rectangle()
-//                            .padding()
                         Text("Events")
                             .font(.title2)
                             .bold()
@@ -63,14 +68,14 @@ struct ContentView: View {
                         
                             
                     }
-                    .navigationBarTitle("Sisyph", displayMode: .large)
+                    .navigationBarTitle("Sisyph", displayMode: .automatic)
                     .navigationBarItems(
                         trailing:
                             HStack{
                                 Button(action: {showSettingModel.toggle()}){
                                     Image(systemName: "ellipsis.circle.fill")
                                 }.sheet(isPresented: $showSettingModel, content: {
-                                    settingpage()
+                                    settingpage(showSettingModel: $showSettingModel)
                                 })
                                 Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
                                     Image(systemName: "puzzlepiece.fill")

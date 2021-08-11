@@ -51,7 +51,7 @@ struct Course: Identifiable {
 
 
 let coursesData = [
-   Course(title: "Sysphy入门",
+   Course(title: "Sysph入门",
           image: "Illustration1",
           color: Color("background3"),
           shadowColor: Color("backgroundShadow3")),
