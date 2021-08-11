@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B30B91726BD3B07005D34DA /* CardRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B30B91626BD3B07005D34DA /* CardRow.swift */; };
+		5B30B91926BD3D98005D34DA /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B30B91826BD3D98005D34DA /* CardView.swift */; };
+		5B64F45C26C38B9E0057C151 /* CourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B64F45B26C38B9E0057C151 /* CourseView.swift */; };
+		5B64F45E26C39AB00057C151 /* CourseRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B64F45D26C39AB00057C151 /* CourseRow.swift */; };
+		5BA91EA726C0D8EB00C6D68A /* SettingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA91EA626C0D8EB00C6D68A /* SettingPage.swift */; };
+		5BDC52DB26BBD724008792ED /* motiontest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDC52DA26BBD724008792ED /* motiontest.swift */; };
 		5BF7C5A6269FFE3100193253 /* Project_SisyphusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF7C5A5269FFE3100193253 /* Project_SisyphusApp.swift */; };
 		5BF7C5A8269FFE3100193253 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF7C5A7269FFE3100193253 /* ContentView.swift */; };
 		5BF7C5AA269FFE3400193253 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BF7C5A9269FFE3400193253 /* Assets.xcassets */; };
@@ -33,6 +39,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5B30B91626BD3B07005D34DA /* CardRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardRow.swift; sourceTree = "<group>"; };
+		5B30B91826BD3D98005D34DA /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		5B64F45B26C38B9E0057C151 /* CourseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseView.swift; sourceTree = "<group>"; };
+		5B64F45D26C39AB00057C151 /* CourseRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseRow.swift; sourceTree = "<group>"; };
+		5BA91EA626C0D8EB00C6D68A /* SettingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingPage.swift; sourceTree = "<group>"; };
+		5BDC52DA26BBD724008792ED /* motiontest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = motiontest.swift; sourceTree = "<group>"; };
 		5BF7C5A2269FFE3100193253 /* Project Sisyphus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project Sisyphus.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BF7C5A5269FFE3100193253 /* Project_SisyphusApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project_SisyphusApp.swift; sourceTree = "<group>"; };
 		5BF7C5A7269FFE3100193253 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -75,6 +87,7 @@
 		5BF7C599269FFE3100193253 = {
 			isa = PBXGroup;
 			children = (
+				5BF7C5D126A0012300193253 /* DesignCode */,
 				5BF7C5A4269FFE3100193253 /* Project Sisyphus */,
 				5BF7C5B6269FFE3500193253 /* Project SisyphusTests */,
 				5BF7C5C1269FFE3500193253 /* Project SisyphusUITests */,
@@ -96,7 +109,6 @@
 			isa = PBXGroup;
 			children = (
 				5BF7C5A5269FFE3100193253 /* Project_SisyphusApp.swift */,
-				5BF7C5A7269FFE3100193253 /* ContentView.swift */,
 				5BF7C5A9269FFE3400193253 /* Assets.xcassets */,
 				5BF7C5AE269FFE3400193253 /* Info.plist */,
 				5BF7C5AB269FFE3400193253 /* Preview Content */,
@@ -128,6 +140,20 @@
 				5BF7C5C4269FFE3500193253 /* Info.plist */,
 			);
 			path = "Project SisyphusUITests";
+			sourceTree = "<group>";
+		};
+		5BF7C5D126A0012300193253 /* DesignCode */ = {
+			isa = PBXGroup;
+			children = (
+				5BF7C5A7269FFE3100193253 /* ContentView.swift */,
+				5BA91EA626C0D8EB00C6D68A /* SettingPage.swift */,
+				5B30B91626BD3B07005D34DA /* CardRow.swift */,
+				5B30B91826BD3D98005D34DA /* CardView.swift */,
+				5B64F45B26C38B9E0057C151 /* CourseView.swift */,
+				5B64F45D26C39AB00057C151 /* CourseRow.swift */,
+				5BDC52DA26BBD724008792ED /* motiontest.swift */,
+			);
+			path = DesignCode;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +285,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BDC52DB26BBD724008792ED /* motiontest.swift in Sources */,
+				5B64F45C26C38B9E0057C151 /* CourseView.swift in Sources */,
+				5BA91EA726C0D8EB00C6D68A /* SettingPage.swift in Sources */,
+				5B64F45E26C39AB00057C151 /* CourseRow.swift in Sources */,
 				5BF7C5A8269FFE3100193253 /* ContentView.swift in Sources */,
 				5BF7C5A6269FFE3100193253 /* Project_SisyphusApp.swift in Sources */,
+				5B30B91926BD3D98005D34DA /* CardView.swift in Sources */,
+				5B30B91726BD3B07005D34DA /* CardRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
