@@ -10,6 +10,9 @@ import SwiftUI
 struct ContentView: View {
     
     @State var showSettingModel = false
+    @AppStorage("displayModePicker") var displayModePicker:Int = 0
+    @Environment(\.colorScheme) var colorScheme: ColorScheme
+    
     init() {
 //        UINavigationBar.appearance().backgroundColor = .systemPink
 
@@ -75,24 +78,30 @@ struct ContentView: View {
                                 Button(action: {showSettingModel.toggle()}){
                                     Image(systemName: "ellipsis.circle.fill")
                                 }.sheet(isPresented: $showSettingModel, content: {
-                                    settingpage(showSettingModel: $showSettingModel)
+                                    settingpage(showSettingModel: $showSettingModel,displayModePicker: $displayModePicker)
                                 })
                                 Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
                                     Image(systemName: "puzzlepiece.fill")
                                 })
                             }
                         
+                        
                     )
 //                    .navigationBarHidden(true)
+                    
                 }
                 
                 
                 
             }
+            .preferredColorScheme(displayModePicker==0 ? nil : displayModePicker==1 ? .light : .dark)           
+            
         }
         
         
+        
     }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
